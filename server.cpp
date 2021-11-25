@@ -24,7 +24,9 @@ void server::onConnectionCallback(const TcpConnectionPtr& conn){
         <<conn->localAddress().toIpPort()<<" is "
         <<(conn->connected()?"UP":"DONW");
     
-    //todo: 创建一个消息解析对象，保存在动态内存中，由conn.setContent维护
+    //2、创建一个parseMsg对象由conn维护
+    parseMsg* parseObj = new parseMsg(bind(&server::sum,this,placeholders::_1,placeholders::_2),bind(&server::uppercase,this,placeholders::_1));
+    conn->setContext(parseObj);
 }
 
 void server::onMessageCallback(const TcpConnectionPtr& conn,Buffer* buf,Timestamp)
@@ -32,5 +34,14 @@ void server::onMessageCallback(const TcpConnectionPtr& conn,Buffer* buf,Timestam
     //1、输出收到的数据
     string msg = buf->retrieveAllAsString();
     LOG_INFO<<"Recive: "<<msg<<"\t"<<"from "<<conn->peerAddress().toIpPort();
-    //todo: 将数据传递给消息解析对象
+    //2、将消息传递给解析对象
+    parseMsg* parseObj = boost::any_cast<parseMsg*>(conn->getContext());
+
+    bool rtnVal = parseObj->getRequestMsg(msg);
+    if(rtnVal){
+        string replyStr = parseObj->getReplyMsg();
+        conn->send(replyStr);
+        conn->shutdown();
+        delete parseObj;
+    }
 }

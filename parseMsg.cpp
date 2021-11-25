@@ -20,7 +20,7 @@ bool parseMsg::getRequestMsg(const string& msg){
     cout<<msg<<endl;
 #endif
 
-    assert(parseIdx==msg.size());
+    assert(parseIdx==requestMsg_.size());
     
     requestMsg_ += msg;
 
@@ -60,8 +60,7 @@ string parseMsg::getReplyMsg(){
     }
     else if(requestVal["function"].asString() == "uppercase"){
         string srcStr = requestVal["str"].asString();
-        transform(srcStr.begin(),srcStr.end(),srcStr.begin(),::toupper);
-        replyVal["result"] = srcStr;
+        replyVal["result"] = uppercase_(srcStr);
         replyMsg_ = replyVal.toStyledString();
     }
     

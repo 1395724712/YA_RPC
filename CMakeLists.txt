@@ -22,9 +22,9 @@ set(CXX_FLAGS
 
 set(CMAKE_CXX_COMPILER "g++")
 
-include_directories("/home/lucky7/build/debug-install-cpp11/include")
-link_directories("/home/lucky7/build/debug-install-cpp11/lib")
-link_libraries(libmuduo_base.a libmuduo_net.a)
+include_directories("/home/lucky7/build/debug-install-cpp11/include" "~/vcpkg/installed/x64-linux/include")
+link_directories("/home/lucky7/build/debug-install-cpp11/lib" "~/vcpkg/installed/x64-linux/lib")
+link_libraries(libmuduo_base.a libmuduo_net.a libjsoncpp.a)
 
-set(SRCFILE main.cpp server.cpp)
+set(SRCFILE main.cpp server.cpp parseMsg.cpp)
 add_executable(demo ${SRCFILE})

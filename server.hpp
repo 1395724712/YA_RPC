@@ -1,7 +1,7 @@
 #ifndef SERVER_H
 #define SERVER_H
 #include<functional>
-
+#include"parseMsg.hpp"
 #include"muduo/net/EventLoop.h"
 #include"muduo/net/TcpServer.h"
 using namespace std;
@@ -25,9 +25,14 @@ private:
     TcpServer server_;
     
     //2、求和远程调用
-    function<float(float,float)> sum_;
+    float sum(float a,float b){
+        return a+b;
+    }
     //3、该大写远程调用
-    function<string(string)> uppercase_;
+    string uppercase(string str){
+        transform(str.begin(),str.end(),str.begin(),::toupper);
+        return str;
+    }
 
 
 };

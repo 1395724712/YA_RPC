@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+parseMsg.o: parseMsg.cpp.o
+
+.PHONY : parseMsg.o
+
+# target to build an object file
+parseMsg.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/parseMsg.cpp.o
+.PHONY : parseMsg.cpp.o
+
+parseMsg.i: parseMsg.cpp.i
+
+.PHONY : parseMsg.i
+
+# target to preprocess a source file
+parseMsg.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/parseMsg.cpp.i
+.PHONY : parseMsg.cpp.i
+
+parseMsg.s: parseMsg.cpp.s
+
+.PHONY : parseMsg.s
+
+# target to generate assembly for a file
+parseMsg.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/parseMsg.cpp.s
+.PHONY : parseMsg.cpp.s
+
 server.o: server.cpp.o
 
 .PHONY : server.o
@@ -189,6 +216,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... parseMsg.o"
+	@echo "... parseMsg.i"
+	@echo "... parseMsg.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

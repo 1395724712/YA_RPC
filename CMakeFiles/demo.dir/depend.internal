@@ -3,6 +3,7 @@
 
 CMakeFiles/demo.dir/main.cpp.o
  /home/lucky7/WorkSpace/YA_RPC/main.cpp
+ /home/lucky7/WorkSpace/YA_RPC/parseMsg.hpp
  /home/lucky7/WorkSpace/YA_RPC/server.hpp
  /home/lucky7/build/debug-install-cpp11/include/muduo/base/Atomic.h
  /home/lucky7/build/debug-install-cpp11/include/muduo/base/CurrentThread.h
@@ -20,7 +21,29 @@ CMakeFiles/demo.dir/main.cpp.o
  /home/lucky7/build/debug-install-cpp11/include/muduo/net/TcpConnection.h
  /home/lucky7/build/debug-install-cpp11/include/muduo/net/TcpServer.h
  /home/lucky7/build/debug-install-cpp11/include/muduo/net/TimerId.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/allocator.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/config.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/forwards.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/json.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/json_features.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/reader.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/value.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/version.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/writer.h
+CMakeFiles/demo.dir/parseMsg.cpp.o
+ /home/lucky7/WorkSpace/YA_RPC/parseMsg.cpp
+ /home/lucky7/WorkSpace/YA_RPC/parseMsg.hpp
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/allocator.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/config.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/forwards.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/json.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/json_features.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/reader.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/value.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/version.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/writer.h
 CMakeFiles/demo.dir/server.cpp.o
+ /home/lucky7/WorkSpace/YA_RPC/parseMsg.hpp
  /home/lucky7/WorkSpace/YA_RPC/server.cpp
  /home/lucky7/WorkSpace/YA_RPC/server.hpp
  /home/lucky7/build/debug-install-cpp11/include/muduo/base/Atomic.h
@@ -41,3 +64,12 @@ CMakeFiles/demo.dir/server.cpp.o
  /home/lucky7/build/debug-install-cpp11/include/muduo/net/TcpConnection.h
  /home/lucky7/build/debug-install-cpp11/include/muduo/net/TcpServer.h
  /home/lucky7/build/debug-install-cpp11/include/muduo/net/TimerId.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/allocator.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/config.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/forwards.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/json.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/json_features.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/reader.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/value.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/version.h
+ /home/lucky7/vcpkg/installed/x64-linux/include/json/writer.h

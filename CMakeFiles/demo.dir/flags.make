@@ -6,5 +6,5 @@ CXX_FLAGS = -pthread
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lucky7/build/debug-install-cpp11/include 
+CXX_INCLUDES = -I/home/lucky7/build/debug-install-cpp11/include -I/home/lucky7/vcpkg/installed/x64-linux/include 
 
