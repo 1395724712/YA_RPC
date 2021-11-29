@@ -44,11 +44,13 @@ string parseMsg::getReplyMsg(){
 
     if(!replyMsg_.empty())
         return replyMsg_;
-    
+
     //1、解析requestMsg_报文
     Reader reader;
     Value requestVal;
     reader.parse(requestMsg_,requestVal);
+
+    id_ = requestVal["id"].asString();
 
     Value replyVal;
     if(requestVal["function"].asString() == "sum"){

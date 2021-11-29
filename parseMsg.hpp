@@ -24,7 +24,13 @@ public:
     //2、返回应答消息
     string getReplyMsg();
 
+    //3、获得返回id
+    string returnId(){return id_;};
+
 private:
+    //0、请求id
+    string id_;
+
     //1、请求数据
     string requestMsg_;
     

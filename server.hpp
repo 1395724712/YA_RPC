@@ -1,6 +1,7 @@
 #ifndef SERVER_H
 #define SERVER_H
 #include<functional>
+#include<set>
 #include"parseMsg.hpp"
 #include"muduo/net/EventLoop.h"
 #include"muduo/net/TcpServer.h"
@@ -34,6 +35,8 @@ private:
         return str;
     }
 
+    //4、id集合
+    set<string> idSet;
 
 };
 
